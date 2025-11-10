@@ -2,28 +2,33 @@ body {
   font-family: Poppins, sans-serif;
   background-color: #ffffff;
   font-size:small;
+  width: 600px;
   padding: 10px;
 }
 
 .row {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-#city, #state, #zip {
-width: 7.78%;
+.row2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
 }
 
-#Email, #Phone, #FirstName, #LastName {
-  width: 12.1%;
+.row2 input[type="text"] {
+  flex: 1;
 }
 
 input[type="text"] {
   background-color: #eeeeee;
-  border: white;
+  border: none;
   border-radius: 8px;
   margin-top: 10px;
-  margin-right: 8px;
-  height: 40px;;
+  height: 40px;
 }
 
 input::placeholder {
@@ -32,14 +37,10 @@ input::placeholder {
   padding-left: 10px;
   opacity: 0.5;
 }
-.street {
-  width: 50%;
-}
 
 .msg {
   background-color: #eeeeee;
   height: 100px;
-  width: 50%;
   border-radius: 8px;
   font-family: Poppins, sans-serif;
   border: white;
